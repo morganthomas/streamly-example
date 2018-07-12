@@ -35,9 +35,9 @@ testStream = do
 main :: IO ()
 main = do
   s <- testStream
-  void . forkIO $ printStream . adapt $ fmap ("R",) s
-  void . forkIO $ printStream . adapt $ fmap ("G",) s
-  void . forkIO $ printStream . adapt $ fmap ("B",) s
+  void . forkIO . printStream . adapt $ fmap ("R",) s
+  void . forkIO . printStream . adapt $ fmap ("G",) s
+  void . forkIO . printStream . adapt $ fmap ("B",) s
   threadDelay 5000000
 
 

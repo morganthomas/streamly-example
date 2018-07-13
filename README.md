@@ -23,3 +23,5 @@ In fact it produces this output:
 ("B",3)
 ("R",4)
 ```
+
+The branch `fix` shows one possible way to make it work as intended.
